@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --base-color: 240;
+  --background: hsl(120, 0%, 100%);
+  --btn_click: hsl(calc(var(--base-color) - 46), 97%, 31%);
+  --text_color: hsl(225, var(--color), var(--black-white));
+  --black-white: 21%;
+  --color: 6%;
+
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Roboto', sans-serif;
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+main {
+  width: min(82.1rem, 80%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+.timer_container {
+  width: 32rem;
+}
+
+.timer {
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+
+  text-transform: uppercase;
+  color: var(--text_color);
+
+  margin-bottom: 1.7rem;
+
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.controls svg path {
+  fill: var(--text_color);
+}
+
+.customize_container button {
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+.customize_container {
+  display: grid;
+  grid-template-areas:
+    'A B'
+    'C D';
+  gap: 3.2rem;
+}
+
+.selected svg path:nth-child(1) {
+  fill: var(--btn_click);
+  transition: fill 800ms;
+}
+.selected svg path:nth-child(2) {
+  fill: white;
+  transition: fill 800ms;
+}
+
+.tree {
+  background-image: url('https://images.unsplash.com/photo-1555037015-1498966bcd7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+  background-size: cover;
+  transition: background 400ms;
+}
+
+.rain {
+  background-image: url('https://images.unsplash.com/photo-1512511708753-3150cd2ec8ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80');
+  background-size: cover;
+  transition: background 400ms;
+}
+
+.cafe {
+  background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+  background-size: cover;
+  transition: background 400ms;
+}
+
+.fire {
+  background-image: url('https://images.unsplash.com/photo-1533088339408-74fcf62b8e6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  transition: background 400ms;
+}
