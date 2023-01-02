@@ -1,6 +1,6 @@
 export const sounds = {
   rainSound: new Audio('./sounds/Chuva.wav'),
-  forestSound: new Audio('./sounds/floresta.wav'),
+  forestSound: new Audio('./sounds/Floresta.wav'),
   cafeteriaSound: new Audio('./sounds/Cafeteria.wav'),
   fireSound: new Audio('./sounds/Lareira.wav'),
 
